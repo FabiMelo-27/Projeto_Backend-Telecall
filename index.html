@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="css/scrollreveal.min.js">
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+        <title>Telecall</title>
+</head>
+
+<body>
+        <!-- Header -->
+        <header class="header">
+                <nav class="nav container flex">
+                        <a href="#" class="logo-content flex">
+                                <i class='logo-icon'></i>
+                                <div class="logo"><img id="logo-pqn" src="images/logo.png" alt="Logo"></div>
+                                <span class="logo-text">Telecall</span>
+                        </a>
+
+                        <div class="menu-content">
+                                <ul class="menu-list flex">
+                                        <li><a href="#home" class="nav-link active-navlink">Home</a></li>
+                                        <li><a href="#about" class="nav-link">Sobre</a></li>
+                                        <li><a href="#menu" class="nav-link">Serviços</a></li>
+                                        <li><a href="#review" class="nav-link">Clientes</a></li>
+
+                                </ul>
+                                <div class="media-icons flex" class="menu-list flex">
+                                        <a id="ddarkModeButton" class="fa-solid fa-circle-half-stroke phone-number"></a>
+                                        <a id="iincreaseFontButton" class="fa-solid fa-text-height phone-number"></a>
+                                        <a id="ddecreaseFontButton" class="fa-solid fa-text-slash phone-number"></a>
+                                </div>
+
+                                <i class='bx bx-x navClose-btn'></i>
+                        </div>
+
+                        <div class="contact-content flex">
+                                <a id="darkModeButton" class="fa-solid fa-circle-half-stroke phone-number"></a>
+                                <a id="increaseFontButton" class="fa-solid fa-text-height phone-number"></a>
+                                <a id="decreaseFontButton" class="fa-solid fa-text-slash phone-number"></a>
+                                <a href="./view/login.php"><i class='fa-solid fa-user phone-number'></i>
+                                        <span class="phone-number">Área do Cliente</span></a>
+                        </div>
+
+                        <i class='bx bx-menu navOpen-btn'></i>
+                </nav>
+        </header>
+
+        <!-- Home -->
+
+        <section class="home" id="home">
+                <div class="home-content">
+                        <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                                <img class="home-img" src="images/slider1.png" alt="Imagem 1">
+                                        </div>
+                                        <div class="swiper-slide">
+                                                <img class="home-img" src="images/slider2.png" alt="Imagem 2">
+                                        </div>
+                                        <div class="swiper-slide">
+                                                <img class="home-img" src="images/slider3.png" alt="Imagem 3">
+                                        </div>
+                                </div>
+                                <div class="swiper-button-next swiper-navBtn"></div>
+                                <div class="swiper-button-prev swiper-navBtn"></div>
+                        </div>
+                </div>
+        </section>
+
+
+        <!-- About -->
+        <section class="section about" id="about">
+                <div class="about-content container">
+                        <div class="about-imageContent">
+                                <img src="images/about.png" alt="" class="about-img">
+                        </div>
+
+                        <div class="about-details">
+                                <div class="about-text">
+                                        <h4 class="content-title"></h4>
+                                        <h2 class="content-title">Entregamos a sua empresa <br> confiabilidade</h2>
+                                        <p class="content-description">Telecall é uma operadora de telecomunicações
+                                                brasileira. Monte planos de celular personalizados para a sua empresa e
+                                                pague apenas pelo que precisa.</p>
+
+                                        <ul class="about-lists flex">
+                                                <li class="about-list">Infraestrutura</li>
+                                                <li class="about-list dot">.</li>
+                                                <li class="about-list">Telefonia</li>
+                                                <li class="about-list dot">.</li>
+                                                <li class="about-list">Mobilidade</li>
+                                        </ul>
+                                </div>
+
+                                <div class="about-buttons flex">
+                                        <a href="view/erro404.html" class="about-link">
+                                                <button class="button">Saiba Mais</button>
+
+                                        </a>
+                                </div>
+                        </div>
+
+                </div>
+        </section>
+
+
+        <!-- Menu -->
+        <section class="section menu" id="menu">
+                <div class="menu-container container">
+                        <div class="meu-text">
+                                <h4 class="section-subtitle"><i></i></h4>
+                                <h2 class="section-title">Serviços mais utilizados</h2>
+                                <p class="section-description">
+                                        Alguns de nossos serviços</p>
+                        </div>
+
+                        <div class="menu-content">
+                                <div class="menu-items">
+                                        <div class="menu-item flex">
+                                                <img src="images/2FA.png" alt="" class="menu-img">
+
+                                                <div class="menuItem-details">
+                                                        <h4 class="menuItem-topic">Autenticação 2 Fatores</h4>
+                                                        <p class="menuItem-des">O 2FA é um procedimento de segurança que
+                                                                garante que serão necessários 2 fatores únicos para
+                                                                liberação de uma ação.</p>
+                                                </div>
+
+                                                <div class="menuItem-price flex">
+                                                        <span class="discount-price">R$</span>
+                                                        <span class="real-price"></span>
+                                                </div>
+                                        </div>
+                                        <div class="menu-item flex">
+                                                <img src="images/SMS.png" alt="" class="menu-img">
+
+                                                <div class="menuItem-details">
+                                                        <h4 class="menuItem-topic">SMS</h4>
+                                                        <p class="menuItem-des">Você envia mensagens de SMS com as
+                                                                informações que o seu cliente precisa e com a segurança,
+                                                                velocidade e a confiabilidade.</p>
+                                                </div>
+
+                                                <div class="menuItem-price flex">
+                                                        <span class="discount-price">R$</span>
+                                                        <span class="real-price"></span>
+                                                </div>
+                                        </div>
+                                        <div class="menu-item flex">
+                                                <img src="images/GOOGLE.png" alt="" class="menu-img">
+
+                                                <div class="menuItem-details">
+                                                        <h4 class="menuItem-topic">Número de Máscara</h4>
+                                                        <p class="menuItem-des">Garanta aos seus clientes chamadas e
+                                                                enviar mensagens sem expor seus números de telefone
+                                                                pessoais.</p>
+                                                </div>
+
+                                                <div class="menuItem-price flex">
+                                                        <span class="discount-price">R$</span>
+                                                        <span class="real-price"></span>
+                                                </div>
+                                        </div>
+                                        <div class="menu-item flex">
+                                                <img src="images/MASCARA.png" alt="" class="menu-img">
+
+                                                <div class="menuItem-details">
+                                                        <h4 class="menuItem-topic">Google Verified</h4>
+                                                        <p class="menuItem-des">Recurso do Google, exclusivo para
+                                                                telefones Android, permite que empresas exibam para o
+                                                                cliente na hora da chamada sua marca.</p>
+                                                </div>
+
+                                                <div class="menuItem-price flex">
+                                                        <span class="discount-price">R$</span>
+                                                        <span class="real-price"></span>
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <div class="time-table">
+                                        <span class="time-topic">Lista de Serviços</span>
+
+                                        <ul class="time-lists">
+                                                <li class="time-list flex">
+                                                        <span class="open-day"> Infraestrutura</span>
+                                                        <span class="open-time"></span>
+                                                </li>
+                                                <li class="time-list flex">
+                                                        <span class="open-day"> Telefonia</span>
+                                                        <span class="open-time"></span>
+                                                </li>
+                                                <li class="time-list flex">
+                                                        <span class="open-day"> Mobilidade</span>
+                                                        <span class="open-time"></span>
+                                                </li>
+                                                <li class="time-list flex">
+                                                        <span class="open-day"> 2FA</span>
+                                                        <span class="open-time"></span>
+                                                </li>
+                                                <li class="time-list flex">
+                                                        <span class="open-day"> SMS</span>
+                                                        <span class="open-time"></span>
+                                                </li>
+                                                <li class="time-list flex">
+                                                        <span class="open-day"> Número de Máscara</span>
+                                                        <span class="open-time"></span>
+                                                </li>
+                                                <li class="time-list flex">
+                                                        <span class="open-day"> Google Verified</span>
+                                                        <span class="open-time"></span>
+                                                </li>
+                                        </ul>
+                                </div>
+                        </div>
+                </div>
+        </section>
+
+
+        <!-- Parceiros Section -->
+        <section class="section brand">
+                <div class="brand-container container">
+                        <h2 class="content-title">Parceiros</h2>
+
+                        <div class="brand-images">
+                                <div class="brand-image">
+                                        <img src="images/QU1.png" alt="" class="brand-img">
+                                </div>
+                                <div class="brand-image">
+                                        <img src="images/QU2.png" alt="" class="brand-img">
+                                </div>
+                                <div class="brand-image">
+                                        <img src="images/QU3.png" alt="" class="brand-img">
+                                </div>
+                                <div class="brand-image">
+                                        <img src="images/QU4.png" alt="" class="brand-img">
+                                </div>
+                                <div class="brand-image">
+                                        <img src="images/QU5.png" alt="" class="brand-img">
+                                </div>
+
+                        </div>
+                </div>
+
+
+                <!-- Localização Section -->
+                <br><br>
+                <h2 class="content-title">Localização</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.7015560043374!2d-43.348884621829676!3d-22.997999541142757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bda488eb4a8e5%3A0xd92e16bc83ef0d07!2sTelecall!5e0!3m2!1spt-BR!2sbr!4v1697202171851!5m2!1spt-BR!2sbr"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+        </section>
+
+        <!-- Clientes Section -->
+        <section class="section review" id="review">
+                <div class="review-container container">
+                        <div class="review-text">
+                                <h2 class="content-title">Nossos Clientes</h2>
+                                <p class="content-title">Renomadas que fazem parte da equipe Telecall</p>
+                        </div>
+
+                        <div class="tesitmonial swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                        <div class="testi-content swiper-slide flex">
+                                                <img src="images/C1.jpg" alt="" class="review-img">
+                                                <p class="review-quote">O Mc Donald conheceu a Telecall durante
+                                                        os Jogos Olímpicos Rio 2016 para um pedido urgente de um
+                                                        evento de mídia ao vivo, quatro dias mais tarde. A
+                                                        Telecall foi extremamente profissional... Nós
+                                                        simplesmente não teríamos conseguido sem a parceria da
+                                                        equipe Telecall. Só usaremos eles em eventos no Rio.</p>
+                                                <i class='bx bxs-quote-alt-left quote-icon'></i>
+
+                                                <div class="testi-personDetails flex">
+                                                        <span class="name">Kathy Whalen</span>
+                                                        <span class="job">Project Manager, Consumer Events |
+                                                                Creative & Event Solutions | Global Business
+                                                                Services</span>
+                                                </div>
+                                        </div>
+                                        <div class="testi-content swiper-slide flex">
+                                                <img src="images/C2.jpg" alt="" class="review-img">
+                                                <p class="review-quote">Fantástico trabalho da equipe Telecall.
+                                                        Profissionais completamente comprometidos. Uma entrega
+                                                        perfeita.</p>
+                                                <i class='bx bxs-quote-alt-left quote-icon'></i>
+
+                                                <div class="testi-personDetails flex">
+                                                        <span class="name">Leonardo Cohen</span>
+                                                        <span class="job">SLS World Championship Finals
+                                                                2018</span>
+                                                </div>
+                                        </div>
+                                        <div class="testi-content swiper-slide flex">
+                                                <img src="images/C3.jpg" alt="" class="review-img">
+                                                <p class="review-quote">É com o coração transbordando de orgulho
+                                                        e gratidão que concluímos uma edição do Rock in Rio.
+                                                        Toda a magia que vivemos nesses 7 dias de festival
+                                                        jamais seria possivel sem a participação de marcas e
+                                                        profissionais como vocês que acreditaram na gente e
+                                                        ajudaram a tornar esse sonho realidade. A edição 2017
+                                                        ficará para a história e agora nosso desafio é ainda
+                                                        maior. Fica aqui mais uma vez, o nosso muito obrigada e
+                                                        que venha 2019!!</p>
+                                                <i class='bx bxs-quote-alt-left quote-icon'></i>
+
+                                                <div class="testi-personDetails flex">
+                                                        <span class="name">Laila Dias Account Executive -
+                                                                Brasil</span>
+                                                        <span class="job">Rock in Rio</span>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="swiper-button-next swiper-navBtn"></div>
+                                <div class="swiper-button-prev swiper-navBtn"></div>
+                                <div class="swiper-pagination"></div>
+                        </div>
+                </div>
+        </section>
+
+
+        <!-- Newsletter Section -->
+        <main id="main" class="section newsletter">
+                <div class="newletter-container container">
+                        <a href="#" class="logo-content flex">
+                                <i class='fa-solid fa-phone phone-icon'></i>
+                                <span class="logo-text">Telecall</span>
+                        </a>
+
+                        <p class="section-description">Telecall é uma operadora de telecomunicações brasileira que
+                                oferece a seus clientes o mais alto padrão de qualidade, velocidade e
+                                acessibilidade em soluções de comunicação. Serviços que incluem uma ampla gama
+                                de valores agregados, oferecendo aos clientes operações mais produtivas,
+                                inovadoras e eficazes.
+                                Com mais de 20 anos de experiência na indústria global, a Telecall hoje é
+                                sinônimo de qualidade e eficiência.</p>
+
+
+
+                        <div id="main" class="newsletter media-icons flex">
+                                <a href="https://www.facebook.com"><i class='bx bxl-facebook'></i></a>
+                                <a href="https://twitter.com/i/flow/login"><i class='bx bxl-twitter'></i></a>
+                                <a href="https://www.instagram.com/accounts/login"><i
+                                                class='bx bxl-instagram-alt'></i></a>
+                                <a href="https://www.youtube.com/login"><i class='bx bxl-youtube'></i></a>
+                        </div>
+                </div>
+        </main>
+
+
+        <!-- Footer Section -->
+        <footer class="section footer">
+                <div class="footer-container container">
+                        <div class="footer-content">
+                                <a href="#" class="logo-content flex">
+                                        <i class='fa-solid fa-phone phone-icon'></i>
+                                        <span class="logo-text">Telecall</span>
+                                </a>
+
+                                <p class="content-description">Telecall é uma operadora de telecomunicações
+                                        brasileira </p>
+
+                                <div class="footer-location flex">
+                                        <i class='bx bx-map map-icon'></i>
+
+                                        <div class="location-text">
+                                                Rio de Janeiro, RJ
+                                        </div>
+                                </div>
+                        </div>
+
+                        <div class="footer-linkContent">
+                                <ul class="footer-links">
+                                        <h4 class="footerLinks-title">Saiba Mais</h4>
+
+                                        <li><a href="view/erro404.html" class="footer-link">Google Verified</a>
+                                        </li>
+                                        <li><a href="view/erro404.html" class="footer-link">Número de
+                                                        Máscara</a></li>
+                                        <li><a href="view/erro404.html" class="footer-link">SMS</a></li>
+                                        <li><a href="./view/cadastroView.html" class="footer-link">Cadastro</a>
+                                        </li>
+                                        <li><a href="view/login.php" class="footer-link">Área Cliente</a></li>
+                                </ul>
+                                <ul class="footer-links">
+                                        <h4 class="footerLinks-title">Planos</h4>
+
+                                        <li><a href="#menu" class="footer-link">Cpaas</a></li>
+                                        <li><a href="#menu" class="footer-link">2FA</a></li>
+                                        <li><a href="#menu" class="footer-link">Catálogo</a></li>
+                                </ul>
+                        </div>
+                </div>
+                <div class="footer-copyRight">&#169; Telecall</div>
+        </footer>
+
+        <!-- Scroll Up -->
+        <div>
+                <a href="#home" class="scrollUp-btn flex">
+                        <i class='bx bx-up-arrow-alt scrollUp-icon'></i>
+                </a>
+
+        </div>
+
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/scrollreveal.js"></script>
+<script src="js/script.js"></script>
+</body>
+
+</html>

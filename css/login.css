@@ -1,0 +1,148 @@
+@charset "utf-8";
+
+body{
+	background: url(../images/slider1.png);
+}
+
+
+.corpo{
+	height: 500px;	
+	padding: 5px;	
+	align-items: center;
+	justify-content: center;
+}
+
+.title{
+	/* background-color: red; */
+	color: #f8f6f6;
+	margin: 5rem 0 2rem 0;
+}
+
+
+form {
+	background-color:#f8f6f6;
+	border-radius: 10px;
+	box-shadow: 10px 10px 5px  #888888;
+	margin: 50px auto 50px auto;
+	padding: 2rem;
+	width: 350px;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	border-spacing: 1px solid #888888;
+
+}
+
+input[type="text"],
+input[type="password"] {
+	width: 80%;
+	padding: 12px;	
+	border: none;
+	margin: 2rem 0;
+	box-sizing: border-box;
+	font-size: 1.2rem;
+	height: 30px;
+	border-bottom: #3071cb solid 1.5px;
+	background-color: #f8f6f6;
+	
+	
+}
+
+input[type="text"]:hover{
+	box-shadow: 1px 1px 1px 1px #888888;
+}
+input[type="password"]:hover{
+	box-shadow: 1px 1px 1px 1px #888888;
+}
+input[type="text"]:focus{
+	box-shadow: 1px 1px 1px 1px #888888;
+}
+input[type="password"]:focus{
+	box-shadow: 1px 1px 1px 1px #888888;
+}
+
+
+
+button[type="reset"] , input[type="submit"]{
+	background-color: #3071cb;
+	color: #fff;	
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 1.1rem;
+	height: 35px;
+	width: 70px;	
+	justify-content: center;
+	
+}
+
+.btns{
+	display: flex;
+	width: 100%;
+	padding: 1rem;
+	margin: 1rem;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+
+}
+
+button[type="reset"]:hover {
+	background-color: #313030;
+	
+}
+
+input[type="submit"]:hover {
+	background-color: #313030;
+}
+
+a#esq-senha, a#cad {
+	color: #73051e;
+	text-decoration: none;
+    font-size: 1rem;   
+    float: center;
+	gap: 2rem;
+}
+
+a#esq-senha:hover, a#cad:hover {
+	color: #3071cb;
+}
+.links{
+	display: flex;	
+	justify-content: center;	
+	width: 100%;
+	gap: 2rem;
+
+}
+h2#login {
+	text-align: center;
+    font-size: 2.5vw;
+    margin-top: 0;
+	padding-bottom: 1rem;
+	
+}
+
+.logout{
+	display: flex;
+    width: 100%; 
+	justify-content: right;
+	
+}
+.logout a{	   
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+
+
+/* estilo media
+***********************************************************/
+@media screen and (max-width: 600px){
+	a#esq-senha, a#cad {
+		font-size: 10px;
+	}
+
+	
+}

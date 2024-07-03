@@ -1,0 +1,238 @@
+
+#form-cliente{
+  background-color: #0e2338;  
+  margin: 0; 
+  padding: 0;
+}
+
+.conteudo-cliente{  
+    width: 100%;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+   
+  }
+  
+ .form-content span, #date span{
+  width: 27px;
+  border-radius: 5px 0 0 5px;
+
+ } 
+ .form-content {  
+  display: flex;
+  width: 100%;
+  
+   } 
+  
+  .container-form{
+    background-color: #fafafa;
+    box-shadow: 10px 10px 5px  #888888;
+    border-radius: 14px;
+    margin: 50px;
+    max-width: 600px;
+    width: 100%;  
+    overflow: hidden;
+    margin-top: 8rem;
+  }
+  
+  .title-cadastro{
+    background: linear-gradient(120deg, #3acbf0 0%, #8bb0ff 100%);
+    padding: 2px;
+    text-align: center;
+    color: #FFF;
+  }
+
+  .title-cadastro h2{   
+    font-size: 30px;
+    padding: 10px;
+  }
+  
+  legend{
+    margin-bottom: 10px;
+  }
+
+  #legend {
+    width: 30px;
+    padding-bottom: 1rem;
+  }
+  
+  /* campos do formulário */
+  .form{
+    padding: 18px;
+    
+  }
+  
+  .form-content{
+    margin-bottom: 8px;
+    padding-bottom: 18px;
+    position: relative;
+  }
+  
+    
+  .form-content input{
+    display: block;
+    width: 95%;
+    height: 35px;
+   border-radius: 0 5px 5px 0;
+    padding: 8px;
+    border: 1px solid #dfdfdf;
+  }
+  
+  .form-content a{
+    position: absolute;
+    bottom:1px;
+    left: 0;
+    visibility: hidden;
+    font-size: 10px;      
+    color: red;    
+    height: 1.5rem;
+  }
+
+  .form-content span i {
+    color: #333;
+  }
+
+  .trio{   
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    }
+
+  select {   
+    width: 155px;
+    height: 30px;
+    border-radius: 0 5px 5px 0;
+
+  }
+  
+  #cpf-div, #date{ 
+    width:100%;
+  }
+
+  .dupla1{   
+    display: flex;    
+    gap: 5px;
+  }
+
+  #rua {
+    width:450px;
+  }
+
+  #n{
+width: 110px;
+  }
+
+  .dupla2{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+  }
+
+  .botoes{   
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  input[type="submit"], input[type="reset"]{
+    background-color: #165d9a;
+    color: #FFF;
+    width: 60px;
+    padding: 0.5rem;
+    border-radius: 5px;    
+    border: 0;
+    font-size: 14px;
+    cursor: pointer;
+    
+  }
+
+  .botoes #voltar{
+    background-color: #165d9a;
+    color: #FFF;
+    width: 60px;
+    padding: 0.5rem;
+    border-radius: 5px;    
+    border: 0;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  
+  .form-content.error input{
+    border-color: #ff3b25;
+  }
+
+  .form-content.error select{
+    border-color: #ff3b25;
+  }
+  
+  .form-content.error a{
+    color: #ff3b25;
+    visibility: visible;
+    
+  }
+  
+    #cadastrado{    
+      display: flex;
+      padding: 10px;
+      align-items: center;
+      justify-content: center;
+    }
+
+  #cadastrado a{
+    font-size: 12px;
+    color: #ff3b25;
+    text-decoration: underline;
+    text-align: center;
+
+  }
+
+  #cadastrado p{
+    font-size: 12px;
+  }
+  
+  /* Dialog */
+  
+  dialog::backdrop{
+    background-color: rgb(0 0 0 /0.5);
+  
+  }
+  
+  dialog{
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 0 0 rgb(0 0 0 /0.3);
+    width: 80%;
+    
+  }
+  
+  
+  dialog{
+    background: linear-gradient(to bottom,black, #165d9a,#00c3ff white );
+    /* Para navegadores que não suportam */
+    background: -webkit-linear-gradient(top,black, #165d9a,#00c3ff white);
+   
+    width: 250px;
+  }
+   
+    dialog h2{
+    color: black;
+    font-size: 18px;
+  }
+  
+  
+  footer.form{
+   display: none;
+  }
+
+  input::placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color: #333;
+  }
+ 

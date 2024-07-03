@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/2fa.css">
+    <title>Fator de Autenticação</title>
+</head>
+<body >
+
+<div class="caixa">
+    <div id="sair">
+        <a href="login.php" >X</a>
+    </div>
+
+    <img id="img-2fa" src="../images/2fa.gif" alt="">
+    <h2>Redefinir Senha</h2>
+   
+    <form action="../php/valida2fa.php" method="post">
+        <input type="hidden" name="login_user" id="login_user" value="<?=$login_usuario?>">
+        <input type="hidden" name="pergunta" value="<?php echo htmlspecialchars($pergunta);?>">
+        <h3 id="pergunta">Esqueceu sua senha?</h3>
+        <p>Digite seu email</p>
+        <input type="text" id="resposta" name="resposta" placeholder="Digite seu email" autofocus>
+        <input class="btn" type="submit" value="Enviar">
+        
+    </form>
+</div>
+
+
+
+
+
+<script src="../js/2fa.js"></script>
+</body>
+</html>

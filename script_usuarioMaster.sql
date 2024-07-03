@@ -1,0 +1,2 @@
+INSERT INTO users (nome, data_nascimento, genero, nome_mae, cpf, email, telefone, celular, cep, endereco, num, complemento, bairro, cidade, estado, login, senha, tipo_user)
+VALUES ('Sabrina Rafaela Julia da Silva', '1964-02-04', 'feminino', 'Hadassa Sophia Simone', '603.462.128-39', 'sabrina_dasilva@latapack.com.br', '(82) 3970-3529', '(82) 99587-2868', '57060-971', 'Avenida Doutor Durval de Góes Monteiro 7037', 288, 'casa', 'Tabuleiro do Martins', 'Maceió', 'AL', 'admins', MD5('administ'), 2);

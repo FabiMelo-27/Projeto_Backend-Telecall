@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <title>Cadastro</title>
+</head>
+
+
+<body id="form-cliente">
+
+    <main class="corpo">
+        <div class="conteudo-cliente">
+            <div class="container-form">
+                <div class='title-cadastro'>
+                    <h2 id="titulocadastro">Cadastre-se</h2>
+                </div>
+
+                <form id="form" class="form" method="post" action="../php/cadastro_script.php"
+                    onsubmit="return checkForm();">
+
+                    <legend><img id="legend" src="../images/pessoa.png" alt=""> Identificação do Usuário</legend>
+
+                    <div class="form-content">
+                        <span class="input-group-text" id="basic-addon1"><i class="fa fa-user"></i></span>
+                        <input type="text" id="nome" name="nome" class="form-control" placeholder="Nome Completo"
+                            aria-label="Username" aria-describedby="basic-addon1" autofocus required>
+
+                        <a> Aqui aparecerá a mensageem de erro</a>
+                    </div>
+
+                    <div class="trio">
+                        <div id="cpf-div" class="form-content">
+                            <span class="input-group-text" id="basic-addon1"><i
+                                    class="bi bi-credit-card-2-front"></i></i>
+                            </span>
+                            <input type="text" id="cpf" name="cpf" placeholder="CPF" maxlength="14" required>
+                            <a> Aqui aparecerá a mensageem de erro</a>
+                        </div>
+
+                        <div id="date" class="form-content">
+                            <span class="input-group-text" id="basic-addon1"><i class="bi bi-cake2-fill"></i></i>
+                            </span>
+                            <input type="date" id="data_nascimento" name="data_nascimento" min="1900"
+                                max="<?php ($data-1);?>" required>
+                            <a> Aqui aparecerá a mensageem de erro</a>
+                        </div>
+
+                        <div id="sexo" class="form-content">
+                            <span class="input-group-text" id="basic-addon1"><i class="bi bi-gender-neuter"></i></span>
+                            <select name="genero" id="genero" required>
+                                <option value="" disabled selected hidden>Gênero</option>
+                                <option value="masc">Masculino</option>
+                                <option value="fem">Feminino</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                            <a> Aqui aparecerá a mensageem de erro</a>
+                        </div>
+                    </div>
+
+                    <div class="form-content">
+                        <span class="input-group-text" id="basic-addon1"><i class="bi bi-person-standing-dress"></i>
+                        </span>
+                        <input type="text" id="nome_mae" name="nome_mae" placeholder="Nome da mãe" minlength="8"
+                            maxlength="60" required>
+                        <a> Aqui aparecerá a mensageem de erro</a>
+                    </div>
+
+
+
+                    <legend><img id="legend" src="../images/ficha.png" alt=""> Informações de Contato</legend>
+                    <div class="form-content">
+                        <span class="input-group-text" id="basic-addon1">@
+                        </span>
+                        <input type="email" id="email" name="email" placeholder="Email  " required>
+                        <a> Aqui aparecerá a mensageem de erro</a>
+                    </div>
+
+                    <div class="trio">
+                        <div id="phone" class="form-content">
+                            <span class="input-group-text" id="basic-addon1"><i class="bi bi-telephone-fill"></i>
+                            </span>
+                            <input type="tel" id="telefone" name="telefone" placeholder="Telefone Fixo" maxlength="16"
+                                required>
+                            <a> Aqui aparecerá a mensageem de erro</a>
+                        </div>
+
+                        <div id="cel-phone" class="form-content">
+                            <span class="input-group-text" id="basic-addon1"><i class="bi bi-phone-fill"></i>
+                            </span>
+                            <input type="cel" id="celular" name="celular" placeholder="Celular" maxlength="17" required>
+                            <a> Aqui aparecerá a mensageem de erro</a>
+                        </div>
+
+                        <div class="form-content">
+                            <span class="input-group-text" id="basic-addon1"><i class="bi bi-mailbox2"></i>
+                            </span>
+                            <input type="text" id="cep" name="cep" placeholder="CEP" maxlength="9" required>
+                            <a> Aqui aparecerá a mensageem de erro</a>
+                        </div>
+                    </div>
+
+                    <div class="dupla1">
+                        <div id="rua" class="form-content">
+                            <span class="input-group-text" id="basic-addon1"><i class="bi bi-house-fill"></i></span>
+                            <input type="text" id="endereco" name="endereco" placeholder="Enderço" required>
+                            <a> Aqui aparecerá a mensageem de erro</a>
+                        </div>
+
+                        <div id="n" class="form-content">
+                            <span class="input-group-text" id="basic-addon1"><i class="bi bi-123"></i></span>
+                            <input type="text" id="num" name="num" placeholder="Número" pattern="[0-9]*"
+                                title="Digite apenas números" required>
+                            <a> Aqui aparecerá a mensageem de erro</a>
+                        </div>
+                    </div>
+
+                    <div class="dupla2">
+                        <div class="form-content">
+                            <span class="input-group-text" id="basic-addon1"><i class="bi bi-house-fill"></i></span>
+                            <input type="text" id="complemento" name="complemento"
+                                placeholder="Complemento (apt, bloco, quadra...)">
+                            <a> Aqui aparecerá a mensageem de erro</a>
+                        </div>
+
+                        <div class="form-content">
+                            <span class="input-group-text" id="basic-addon1"><i class="bi bi-map-fill"></i></span>
+                            <input type="text" id="bairro" name="bairro" placeholder="Bairro" required>
+                            <a> Aqui aparecerá a mensageem de erro</a>
+                        </div>
+                    </div>
+
+                    <div class="dupla2">
+                        <div class="form-content">
+                            <span class="input-group-text" id="basic-addon1"><i class="bi bi-map-fill"></i></span>
+                            <input type="text" id="cidade" name="cidade" placeholder="Cidade" required>
+                            <a> Aqui aparecerá a mensageem de erro</a>
+                        </div>
+
+                        <div class="form-content">
+                            <span class="input-group-text" id="basic-addon1"><i class="bi bi-map-fill"></i></span>
+                            <input type="text" id="estado" name="estado" placeholder="Estado" required>
+                            <a> Aqui aparecerá a mensageem de erro</a>
+                        </div>
+                    </div>
+
+                    <legend><img id="legend" src="../images/segurança.png" alt=""> Acesso</legend>
+
+
+
+                    <div class="form-content">
+                        <span class="input-group-text" id="basic-addon1"><i class="fa fa-user-plus"></i></span>
+                        <input type="text" id="login" name="login" maxlength="6" placeholder="Usuário" required>
+                        <a> Aqui aparecerá a mensageem de erro</a>
+                    </div>
+
+                    <div class="dupla2">
+                        <div class="form-content ">
+                            <span class="input-group-text" id="basic-addon1"><i class="bi bi-lock-fill"></i></span>
+                            <input type="password" id="senha" name="senha" placeholder="Crie sua senha" maxlength="8"
+                                required>
+                            <a> Aqui aparecerá a mensageem de erro</a>
+                        </div>
+
+                        <div class="form-content">
+                            <span class="input-group-text" id="basic-addon1"><i class="bi bi-lock-fill"></i></span>
+                            <input type="password" id="confirmaSenha" name="confirmaSenha" placeholder="Repita a senha"
+                                maxlength="8" required>
+                            <a> Aqui aparecerá a mensageem de erro</a>
+                        </div>
+                    </div>
+
+                    <div class="botoes">
+                        <a href="../index.html" id="voltar">Voltar</a>
+                        <input type="submit" value="OK">
+
+                        <input type="reset" class="btn btn-primary" value="Limpar">
+                    </div>
+
+                    <div id="cadastrado">
+                        <p>Já possui cadastro? <a href="login.php"> Faça seu Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+</body>
+
+<script src="../js/validaCadastro.js"></script>
+<script src="../js/validaCep.js"></script>
+
+</html>

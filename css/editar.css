@@ -1,0 +1,11 @@
+span{
+    display: none;
+}
+.form-control.error input{
+    border-color: #ff3b25;
+  }
+  
+  .form-control.error a{
+    color: #ff3b25;
+    visibility: visible;
+  }

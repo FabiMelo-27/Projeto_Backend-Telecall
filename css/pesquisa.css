@@ -1,0 +1,180 @@
+ body{
+    max-width: 1130px;
+ }
+.card-master{
+    background-color: #cccccc40;
+    border: 1px solid #ffff;
+    width: 100%;
+    margin: 1rem;
+   
+   
+}
+
+.title{
+    background-color: #ccc;
+    width: 100%;
+    padding: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;    
+   
+}
+
+.title img{
+    width: 80px;
+}
+
+.title h3{
+    font-size: 16px;
+       
+}
+
+table{
+   
+    max-width: 100%;
+}
+
+.card-funcionario{
+    background-color: #cccccc5a;
+    margin: 0 0.5rem 0 1rem;
+    
+}
+.ident-comandos{
+   
+   justify-content: space-between;
+    padding: 1rem;
+    display: flex;
+    
+}
+
+
+.ident-comandos h2{
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 0;
+  
+    width: 100%;
+}
+
+.btns{    
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.btns a, button{
+   margin:0;
+    width: 40px;
+    height: 35px;
+    font-size: 12px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.btns h3{
+    font-size:18px;
+    margin-bottom: 0;  
+    
+}
+
+
+tr td a i{
+    padding: 0;
+    margin: 0;
+    width: 20px;
+    font-size: 14px;
+    color: blue;
+}
+tr td a i:hover{
+    color: red;
+}
+
+#btn-log{
+    font-size: 10px;
+    color: blue;   
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+   
+}
+#btn-log:hover{
+    color: red
+}
+
+
+form{
+    /* background-color: blue; */
+    margin-top: 0;
+    padding-top: 0;
+}
+
+form input[type="search"]{
+    margin-left: 1rem;    
+    width: 350px;
+  
+}
+
+
+
+.fechar-modal{
+    background-color: #cccc;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+  
+  
+
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* log de usuario */
+#logUsuario{
+   
+  margin: 0;
+  padding: 0;
+}
+.cardLog{
+    background-color:#ffff;
+    width: 100%;
+}
+
+#id-usuario{
+    
+    width: 100%;
+}
+
+#id-usuario h4{
+   
+    font-size: 16px;
+    font-weight: 600;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#id-usuario ul li{
+   
+    font-size: 14px;
+    font-weight: 600;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0 ;
+    padding: 0 1rem;
+}
+
+body{
+    background-color: aqua;
+}
+
+th{
+    font-size: 10px;
+}
+
+td{
+    font-size: 10px;
+}
+

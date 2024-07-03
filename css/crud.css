@@ -1,0 +1,75 @@
+#clienteMaster{
+    background-color: green;
+}
+
+
+#logout{
+    width: 60px;
+    margin: 1rem;
+}
+
+
+
+button{
+    margin-left: 1rem;
+}
+
+
+.table .table-hover{
+    width:800px ;
+    margin-top: 2rem;
+    margin-left: 10rem;
+    padding-left: 1rem;
+}
+
+.tam-m{
+    width: 500px;
+   
+}
+
+.tam-g{
+    width: 650px;
+}
+
+/* area do usuario master */
+/* identificação */
+
+
+/* Área do cliente */
+
+h5 img #contato-cliente{
+    width: 30px;
+}
+
+/* Editar Senha */
+main{    
+    height: 540px;
+    background-color: azure;
+}
+.card{    
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px  #888888;
+    width: 450px;
+}
+
+h5{
+    font-size: 16px;
+    font-weight: 600;
+    
+}
+
+input[type="text"],input[type="password"]{
+   
+    width: 250px;
+}
+
+.card-body{
+    
+    padding-top: 1rem;
+}
+
+
+
+
+
