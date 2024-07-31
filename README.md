@@ -27,4 +27,4 @@ Implementação de 2FA com perguntas aleatórias para usuários comuns.
 Desafio Plus: Implementação de botão para baixar lista de usuários em formato PDF.
 
 
-<img src="[imagens/Captura de tela 2024-07-31 093909.png](https://github.com/FabiMelo-27/Projeto_Backend-Telecall/tree/main/images)">
+<img src="imagens/Captura de tela 2024-07-31 093909.png">
