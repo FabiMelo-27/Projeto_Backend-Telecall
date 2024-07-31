@@ -25,3 +25,6 @@ Feedbacks elegantes de mensagem ao usuário durante o envio de formulários.
 Requisitos específicos de preenchimento e validação para o formulário de cadastro de usuário e login.
 Implementação de 2FA com perguntas aleatórias para usuários comuns.
 Desafio Plus: Implementação de botão para baixar lista de usuários em formato PDF.
+
+![Captura de Tela](imagens/Captura de tela 2024-07-31 093909.png)
+
