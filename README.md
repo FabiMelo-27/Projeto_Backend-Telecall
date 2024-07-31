@@ -26,5 +26,5 @@ Requisitos específicos de preenchimento e validação para o formulário de cad
 Implementação de 2FA com perguntas aleatórias para usuários comuns.
 Desafio Plus: Implementação de botão para baixar lista de usuários em formato PDF.
 
-![Captura de Tela](imagens/Captura de tela 2024-07-31 093909.png)
 
+<img src="imagens/Captura de tela 2024-07-31 093909.png">
